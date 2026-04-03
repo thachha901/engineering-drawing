@@ -24,6 +24,7 @@
 - [Traing](#-training)
 - [Sử dụng](#-sử-dụng)
 - [Cấu hình nâng cao](#️-cấu-hình-nâng-cao)
+- [Hướng cải thiện](#-hướng-cải-thiện)
 
 ---
 
@@ -388,6 +389,22 @@ img_proc = preprocess_for_ocr(
 )
 ```
 
+## 🚀 Hướng cải thiện
+
+- Hiện tại, các mô hình OCR truyền thống vẫn chưa đảm bảo được tính ổn định khi xử lý các bản vẽ kỹ thuật có độ phức tạp cao, đặc biệt trong các trường hợp:
+  - Văn bản có kích thước nhỏ, dày đặc
+  - Nhiễu từ đường nét kỹ thuật (lines, edges)
+  - Góc xoay hoặc bố cục không chuẩn
+
+- Trong tương lai, có thể cải thiện bằng cách:
+  - Áp dụng các mô hình OCR hiện đại hơn, có thể áp dụng pretrained rồi tuning trực tiếp với bộ data đủ lớn hơn, như vậy model sẽ có thể extract tốt hơn (ví dụ: deep learning-based OCR)
+  - Kết hợp preprocessing (denoise, enhance contrast, line removal): có thể áp dụng các phương pháp xử lý ảnh sâu hơn, mạnh hơn giúp preprocessing cho bộ data tốt hơn trước khi đưa vào xử lý sâu hơn. 
+
+
+- Ngoài ra, có thể:
+  - Mở rộng dataset để tăng tính đa dạng và khả năng tổng quát hóa
+  - Tối ưu pipeline để giảm thời gian inference
+  - Xây dựng hệ thống đánh giá chi tiết hơn cho từng loại lỗi OCR
 
 
 ---
