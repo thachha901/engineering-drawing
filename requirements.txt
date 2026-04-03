@@ -1,0 +1,17 @@
+torch==2.2.2
+torchvision==0.17.2
+ultralytics==8.1.47
+transformers==4.40.0
+sentencepiece
+easyocr==1.7.1
+opencv-python-headless==4.9.0.80
+pillow==10.3.0
+numpy==1.26.4
+huggingface_hub
+timm
+surya-ocr
+vietocr
+realesrgan
+google-generativeai 
+anthropic 
+paddleocr 

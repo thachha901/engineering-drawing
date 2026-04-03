@@ -1,0 +1,27 @@
+# Model weights
+*.pt
+*.pth
+*.onnx
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.venv/
+
+# Outputs
+outputs/
+*.jpg
+*.png
+*.jpeg
+*.webp
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
