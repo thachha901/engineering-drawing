@@ -388,19 +388,6 @@ img_proc = preprocess_for_ocr(
 )
 ```
 
----
-
-## Kết quả
-
-### Benchmark Performance
-
-| Metric | Score | Details |
-|--------|-------|---------|
-| **Detection mAP50** | 94.2% | RT-DETR trên ~300 bản vẽ test |
-| **Table OCR Accuracy** | 87.3% | Character-level trên 200 bảng kê |
-| **Note OCR Accuracy** | 82.1% | Bao gồm chữ viết tay |
-| **Processing Speed** | ~8s/image | GPU RTX 3090, 1024px images |
-| **Domain Correction** | +12.4% | Độ chính xác sau post-processing |
 
 
 ---
